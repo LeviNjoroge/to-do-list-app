@@ -24,7 +24,7 @@ function TodoMain(){
     return(<>
         <h1>My To-Do List</h1>
         <ol>
-            {list.map((listItem, index) => <li key={index} onClick={deleteItem(index)}>{listItem}</li>)}
+            {list.map((listItem, index) => <li key={index} onClick={()=>deleteItem(index)}>{listItem}</li>)}
         </ol>
         {/*add items*/}
         <input type="text" placeholder='Enter item' id='addItems'/>
