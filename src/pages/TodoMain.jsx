@@ -31,13 +31,12 @@ function TodoMain(){
             </div>
             {/*add items*/}
             <input type="text" placeholder='Enter item' id='addItems'/>
-            <button onClick={addItem}>Add Item</button>
-            <br />
+            <button onClick={addItem}>Add Item</button> <br />  
 
             {/*clear list*/}
             <button onClick={clearList}>Clear List</button>
             <br /><br />
-            <p>Welcome to the To-do list app, <br />To get started, tap on the <b>Clear List</b> button to get rid of all the current placeholder values <br />Add an item to your list by typing it in the input box below and clicking the <b>Add item</b> button <br />You can delete an item by simply <b>tapping on the item</b> <br />Enjoy, and stay disciplened :)</p>
+            <p>Welcome to the To-do list app, <br />To get started, tap on the <b>Clear List</b> button to get rid of all the current placeholder values <br />Add an item to your list by typing it in the input box below and clicking the <b>Add item</b> button <br />You can <span color='brown'>delete an item</span> by simply <b>tapping on the item</b> <br />Enjoy, and stay disciplened :)</p>
     </div>
     </>);
 }
