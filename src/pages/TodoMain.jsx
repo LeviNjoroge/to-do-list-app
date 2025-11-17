@@ -13,7 +13,7 @@ function TodoMain(){
     // reset the list
     return(<>
         <h1>My To-Do List</h1>
-        <p>{date = new Date()}</p>
+        <p>{Date()}</p>
     </>);
 }
 
