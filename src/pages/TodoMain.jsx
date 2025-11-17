@@ -12,7 +12,9 @@ function TodoMain(){
     }
 
     // delete items from the list by tapping on them
-
+    function deleteItem(index){
+        setList(list.filter((_, i)=>i!==index));
+    }
 
     // reset the list
     function clearList(){
@@ -22,7 +24,7 @@ function TodoMain(){
     return(<>
         <h1>My To-Do List</h1>
         <ol>
-            {list.map((listItem, index) => <li key={index}>{listItem}</li>)}
+            {list.map((listItem, index) => <li key={index} onClick={deleteItem(index)}>{listItem}</li>)}
         </ol>
         {/*add items*/}
         <input type="text" placeholder='Enter item' id='addItems'/>
